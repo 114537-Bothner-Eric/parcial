@@ -1,0 +1,16 @@
+ar\edu\utn\frc\tup\lciii\Application.class
+ar\edu\utn\frc\tup\lciii\rest\RestClient.class
+ar\edu\utn\frc\tup\lciii\dtos\common\EquipoBarrio.class
+ar\edu\utn\frc\tup\lciii\configs\MappersConfig.class
+ar\edu\utn\frc\tup\lciii\models\Resultado.class
+ar\edu\utn\frc\tup\lciii\services\Impl\ResultServiceImpl.class
+ar\edu\utn\frc\tup\lciii\configs\RestClientConfig.class
+ar\edu\utn\frc\tup\lciii\configs\SpringDocConfig.class
+ar\edu\utn\frc\tup\lciii\dtos\common\ErrorApi$ErrorApiBuilder.class
+ar\edu\utn\frc\tup\lciii\models\Barrio.class
+ar\edu\utn\frc\tup\lciii\models\Equipo.class
+ar\edu\utn\frc\tup\lciii\controllers\PingController.class
+ar\edu\utn\frc\tup\lciii\services\ResultService.class
+ar\edu\utn\frc\tup\lciii\dtos\common\BarrioResponse.class
+ar\edu\utn\frc\tup\lciii\dtos\common\EquipoResponse.class
+ar\edu\utn\frc\tup\lciii\dtos\common\ErrorApi.class

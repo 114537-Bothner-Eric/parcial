@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  servidor-fut:
+    container_name: fut-container
+    image: futbol
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - "8081:8081"
+    networks:
+      service-net-app:
+  clients:
+    container_name: clientsc
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: weather_db
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      service-net-app:
+
+  practica-parcial:
+    container_name: weather-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - "8080:8080"
+    networks:
+      service-net-app:
+    restart: on-failure
+    
+    
+
+networks:
+  service-net-app:
+
+volumes:
+  mysql-data:
